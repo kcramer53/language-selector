@@ -1,17 +1,13 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    var age = parseFloat($("input#age").val());
-   console.log(age);
-   var desire = $("input:checkbox[name=desire]:checked").val();
-   console.log(desire);
-   if (age >= 18 && desire==="Y") {
-     $("#pass-age").show();
-   } else if (age<18) {$(".screen").show("Sorry you need to be 18 to adopt a furry friend. Come back when you are older!");
-     }
-     else if (desire==="N"){$("#no-desire").show();
-     } else {
-       alert('Please enter your age.');
+    var langage = $("#language").val();
+    var learn = $("input:radio[name=learn]:checked").val();
+    var food = $("input:radio[name=food]:checked").val();
+    var fitness = $("input:radio[name=fitness]:checked").val();
+    var love = $("input:radio[name=love]:checked").val();
+    var music = $("input:radio[name=music]:checked").val();
+
    }
  });
 
@@ -19,25 +15,25 @@ $(document).ready(function() {
 
  $("#button").click(function(){
    var lang = $("input:radio[name=learn]:checked").val();
-   if (lang==="real") {
+   if (learn==="real" && food==="really" && fitness==="realist" && love==="realer" && music==="realing") {
      $("#img1").hide();
      $("#img2").hide();
      $("#img3").hide();
      $("#img4").show();
    }
-  else if (food==="really") {
+  else if (learn==="achiever" && food==="acievers" && fitness==="achieving" && love==="achievinger" && music==="acivingers") {
      $("#img1").hide();
      $("#imj2").hide();
      $("#img4").hide();
      $("#img3").show();
    }
-  else if (fitness==="realist") {
+  else if (learn==="unknnown" && food==="unknowns" && fitness==="unknowing" && love==="unknowingly" && music==="knowingly") {
       $("#img1").hide();
       $("#imj3").hide();
       $("#img4").hide();
       $("#img2").show();
    }
-   else (music==="realing") {
+   else (learn==="real" && food==="unknowns" && fitness==="achieving" && love==="really" && music==="knowingly") {
      $("#img3").hide();
      $("#imj2").hide();
      $("#img4").hide();
