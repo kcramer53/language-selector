@@ -17,6 +17,29 @@ $(document).ready(function() {
 
 
 
-    $("#button").click(function(){
-          var learn = $("input:radio[name=learn]:checked").val();
-          if (learn==="real") {
+ $("#button").click(function(){
+   var lang = $("input:radio[name=learn]:checked").val();
+   if (lang==="real") {
+     $("#img1").hide();
+     $("#img2").hide();
+     $("#img3").hide();
+     $("#img4").show();
+   }
+  else if (food==="really") {
+     $("#img1").hide();
+     $("#imj2").hide();
+     $("#img4").hide();
+     $("#img3").show();
+   }
+  else if (fitness==="realist") {
+      $("#img1").hide();
+      $("#imj3").hide();
+      $("#img4").hide();
+      $("#img2").show();
+   }
+   else (music==="realing") {
+     $("#img3").hide();
+     $("#imj2").hide();
+     $("#img4").hide();
+     $("#img1").show();
+   }
