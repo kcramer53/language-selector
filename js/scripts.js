@@ -39,3 +39,6 @@ $(document).ready(function() {
      $("#img4").hide();
      $("#img1").show();
    }
+   event.preventDefault();
+ });
+});
