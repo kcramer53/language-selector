@@ -28,6 +28,6 @@ _Atom, HTML, CSS, JavaScript_
 
 ### License
 
-*License by MIT *
+*License by MIT*
 
 Copyright (c) 2019 **_Kirsten Cramer Putman_**
