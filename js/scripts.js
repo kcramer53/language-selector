@@ -1,33 +1,32 @@
-    var learn = parseInt($("input:radio[name=learn]:checked").val());
-    var food = parseInt($("input:radio[name=food]:checked").val());
-    var fitness = parseInt($("input:radio[name=fitness]:checked").val());
-    var love = parseInt($("input:radio[name=love]:checked").val());
-    var music = parseint($("input:radio[name=music]:checked").val());
+// back preventDefault
+var quizScore = function(input1, input2, input3, input4, input5){
+  var score = input1 + input2 + input3 + input4 + input5;
+  return score;
+};
 
-   }
- });
+  // front end
+  $(document).ready(function(){
+    $("form").submit(function(event){
+      var inputQuestionOne = parseInt($("input:radio[name=learn]:checked").val());
+      var inputQuestionTwo = parseInt($("input:radio[name=food]:checked").val());
+      var inputQuestionThree = parseInt($("input:radio[name=fitness]:checked").val());
+      var inputQuestionFour = parseInt($("input:radio[name=love]:checked").val());
+      var inputQuestionFive = parseInt($("input:radio[name=music]:checked").val());
 
+      var output = quizScore(inputQuestionOne, inputQuestionTwo, inputQuestionThree, inputQuestionFour, inputQuestionFive);
+      console.log(output);
 
-$(document).ready(function() {
-  $("#formOne").submit(function(event) {
-    $("#button").click(function(){
-   var lang = $("input:radio[name=learn]:checked").val();
-   if (learn==="real" && food==="really" && fitness==="realist" && love==="realer" && music==="realing") {
-     $('#img1",#img2,#img3').hide();
-     $('#img4').show
-   }
-  else if (learn==="achiever" && food==="acievers" && fitness==="achieving" && love==="achievinger" && music==="acivingers") {
-    $('#img1",#img2,#img4').hide();
-    $('#img3').show
-   }
-  else if (learn==="unknnown" && food==="unknowns" && fitness==="unknowing" && love==="unknowingly" && music==="knowingly") {
-    $('#img1",#img4,#img3').hide();
-    $('#img2').show
-   }
-   else (learn==="real" && food==="unknowns" && fitness==="achieving" && love==="really" && music==="knowingly") {
-     $('#img4",#img2,#img3').hide();
-     $('#img1').show
-   }
-   event.preventDefault();
- });
-});
+      if (output <=5){
+        $('#img1').show();
+        $('#img2, #img3').hide();
+        else if (output <= 10){
+          $('#img2').show();
+          $('#img3, #img1').hide();
+        else {
+          $('#img3').show();
+          $('#img2, #img1').hide();
+        }
+        event.preventDefault();
+
+      });
+    });
