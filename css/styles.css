@@ -3,8 +3,12 @@
 }
 body{
   font-family: sans-serif;
-  background-color: solid yellow;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('../img/backdrop.jpg');
   padding: 20px;
+  color: white;
 }
 
 /* img {
