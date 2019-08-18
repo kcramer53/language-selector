@@ -19,10 +19,10 @@ var quizScore = function(input1, input2, input3, input4, input5){
       if (output <=5){
         $('#ruby').show();
         $('#python, #react').hide();
-        else if (output <= 10){
+      }else if (output <= 10){
           $('#python').show();
           $('#react, #ruby').hide();
-        else {
+      }else {
           $('#react').show();
           $('#python, #ruby').hide();
         }
