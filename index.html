@@ -1,165 +1,167 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <meta charset="utf-8">
-    <title>Code Quiz</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="titel panel panel-default">
-        <div class="panel-body">
-          <h1>Here we go!</h1>
-          <h2>Language selector quiz.</h2>
-        </div>
-      </div>
-    <br>
-    <form id="quiz">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <label for="some-input">Enter Your Name</label>
-          <input id="some-input" type="text">
-        </div>
-      </div>
-    <!--question one-->
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <label for="learning"><strong>Based on these answers we will show you the code language that you should learn. How do you feel about learning?</strong></label>
-        <div class="radio">
-          <label>
-    <input type="radio" name="learn" value="1" checked>
-    I am lazy, I dont like to learn or get off the couch.
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="learn" value="2">
-      I cant stop learning, I even learn in my sleep.
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="learn" value="3">
-    I am not sure if I like to learn or not. Just thinking about learning feels like learning.
-  </label>
-</div>
-<br>
-<!--question two  -->
-<div class="panel panel-default">
-  <div class="panel-body">
-    <label for="foodie"><strong>What kind of foodie are you?</strong></label>br>
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/scripts.js"></script>
+        <meta charset="utf-8">
+        <title>Code Quiz</title>
+      </head>
+      <body>
+        <div class="container">
+          <div class="titel panel panel-default">
+            <div class="panel-body">
+              <h1>Here we go!</h1>
+              <h2>Language selector quiz.</h2>
+            </div>
+          </div>
+        <br>
+        <form id="quiz">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <label for="some-input">Enter Your Name</label>
+              <input id="some-input" type="text">
+            </div>
+          </div>
+        <!--question one-->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <label for="learning"><strong>Based on these answers we will show you the code language that you should learn. How do you feel about learning?</strong></label>
+            <div class="radio">
+              <label>
+        <input type="radio" name="learn" value="1" checked>
+        I am lazy, I dont like to learn or get off the couch.
+      </label>
+    </div>
     <div class="radio">
       <label>
-    <input type="radio" name="food" value="1">
-    I am a total chef and I rock it in the kitchen.
-  </label>
-</div>
-<div class="radio">
-<label>
-  <input type="radio" name="food" value="2">
-    I cant even cook scrambled eggs.
-</label>
-</div>
-<div class="radio">
-<label>
-  <input type="radio" name="food" value="3">
-  I am not sure if I like cooking because I have never tried it.
-</label>
-</div>
-<br>
-<!--question 3  -->
-<div class="panel panel-default">
-  <div class="panel-body">
-    <label for="exercise"><strong>How important is exercise to you?</strong></label>
-<div class="radio">
-<label>
-  <input type="radio" name="fitness" value="1">
-    I am a total gym rat, I dont ever miss a day at the gym.
-</label>
-</div>
-<div class="radio">
-<label>
-  <input type="radio" name="fitness" value="2">
-  I have never stepped foot in a gym in my entire life.
-</label>
-<br>
-<div class="radio">
-<label>
-  <input type="radio" name="fitness" value="3">
-    I am not a fan of the gym but I exercise a decent amount.
-</label>
-</div>
-<br>
-<!--question 4  -->
-<div class="panel panel-default">
-  <div class="panel-body">
-    <label for="lover"><strong>How important is your love life?</strong></label>
-<div class="radio">
-<label>
-  <input type="radio" name="love" value="1">
-    I am a hopeless romantic and I have never been single.
-</label>
-</div>
-<div class="radio">
-<label>
-  <input type="radio" name="love" value="2">
-  I am not sure I have never been in a relationship.
-</label>
-<br>
-<div class="radio">
-<label>
-  <input type="radio" name="love" value="3">
-    I am a lonewolf, relationships are too much work.
-</label>
-</div>
-<br>
-<!--question 5  -->
-<div class="panel panel-default">
-  <div class="panel-body">
-    <label for="tunes"><strong>How important is music to you?</strong></label>
-    <div class="radio">
-<label>
-  <input type="radio" name="music" value="1">
-    Music is my religion and my vinyl is its bible.
-</label>
-</div>
-<div class="radio">
-<label>
-  <input type="radio" name="music" value="2">
-  I hate music its just annoying noise.
-</label>
-<br>
-<div class="radio">
-<label>
-  <input type="radio" name="music" value="3">
-    I like some music but not all of it.
-</label>
-</div>
-</div>
-<!-- submit function -->
-<button type="submit" class="btn">Press here to see your language</button>
-</form>
-<br>
-<div id="ruby">
-  <div class="panel panel-default">
-    <div class="panel-body">
-   <img src="img/ruby.jpg" alt="ruby picture">
-   <h3>The language for you is Ruby.</h3>
- </div>
- <div id="python">
-   <div class="panel panel-default">
-     <div class="panel-body">
-   <img src="img/python.jpeg" alt="python picture">
-   <h3>The language for you is Python.</h3>
- </div>
- <div id="react">
-   <div class="panel panel-default">
-     <div class="panel-body">
-   <img src="img/react.png" alt="react picture">
-   <h3>The language for you is React.</h3>
+        <input type="radio" name="learn" value="2">
+          I cant stop learning, I even learn in my sleep.
+      </label>
     </div>
-  </body>
-</html>
+    <div class="radio">
+      <label>
+        <input type="radio" name="learn" value="3">
+        I am not sure if I like to learn or not. Just thinking about learning feels like learning.
+      </label>
+    </div>
+    <br>
+    <!--question two  -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <label for="foodie"><strong>What kind of foodie are you?</strong></label>
+        <div class="radio">
+        <label>
+        <input type="radio" name="food" value="1">
+        I am a total chef and I rock it in the kitchen.
+        </label>
+    </div>
+  </div>
+  </div>
+    <div class="radio">
+    <label>
+      <input type="radio" name="food" value="2">
+        I cant even cook scrambled eggs.
+    </label>
+    </div>
+    <div class="radio">
+    <label>
+      <input type="radio" name="food" value="3">
+      I am not sure if I like cooking because I have never tried it.
+    </label>
+    </div>
+    <br>
+    <!--question 3  -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <label for="exercise"><strong>How important is exercise to you?</strong></label>
+    <div class="radio">
+    <label>
+      <input type="radio" name="fitness" value="1">
+        I am a total gym rat, I dont ever miss a day at the gym.
+    </label>
+    </div>
+    <div class="radio">
+    <label>
+      <input type="radio" name="fitness" value="2">
+      I have never stepped foot in a gym in my entire life.
+    </label>
+    <br>
+    <div class="radio">
+    <label>
+      <input type="radio" name="fitness" value="3">
+        I am not a fan of the gym but I exercise a decent amount.
+    </label>
+    </div>
+    <br>
+    <!--question 4  -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <label for="lover"><strong>How important is your love life?</strong></label>
+    <div class="radio">
+    <label>
+      <input type="radio" name="love" value="1">
+        I am a hopeless romantic and I have never been single.
+    </label>
+    </div>
+    <div class="radio">
+    <label>
+      <input type="radio" name="love" value="2">
+      I am not sure I have never been in a relationship.
+    </label>
+    <br>
+    <div class="radio">
+    <label>
+      <input type="radio" name="love" value="3">
+        I am a lonewolf, relationships are too much work.
+    </label>
+    </div>
+    <br>
+    <!--question 5  -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <label for="tunes"><strong>How important is music to you?</strong></label>
+        <div class="radio">
+    <label>
+      <input type="radio" name="music" value="1">
+        Music is my religion and my vinyl is its bible.
+    </label>
+    </div>
+    <div class="radio">
+    <label>
+      <input type="radio" name="music" value="2">
+      I hate music its just annoying noise.
+    </label>
+    <br>
+    <div class="radio">
+    <label>
+      <input type="radio" name="music" value="3">
+        I like some music but not all of it.
+    </label>
+    </div>
+    </div>
+    <!-- submit function -->
+    <button type="submit" class="btn">Press here to see your language</button>
+    </form>
+    <br>
+    <div id="ruby">
+      <div class="panel panel-default">
+        <div class="panel-body">
+       <img src="img/ruby.jpg" alt="ruby picture">
+       <h3>The language for you is Ruby.</h3>
+     </div>
+     <div id="python">
+       <div class="panel panel-default">
+         <div class="panel-body">
+       <img src="img/python.jpeg" alt="python picture">
+       <h3>The language for you is Python.</h3>
+     </div>
+     <div id="react">
+       <div class="panel panel-default">
+         <div class="panel-body">
+       <img src="img/react.png" alt="react picture">
+       <h3>The language for you is React.</h3>
+        </div>
+      </body>
+    </html>
