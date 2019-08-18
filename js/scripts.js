@@ -1,4 +1,4 @@
-// back preventDefault
+// back end
 var quizScore = function(input1, input2, input3, input4, input5){
   var score = input1 + input2 + input3 + input4 + input5;
   return score;
@@ -17,14 +17,14 @@ var quizScore = function(input1, input2, input3, input4, input5){
       console.log(output);
 
       if (output <=5){
-        $('#img1').show();
-        $('#img2, #img3').hide();
+        $('#ruby').show();
+        $('#python, #react').hide();
         else if (output <= 10){
-          $('#img2').show();
-          $('#img3, #img1').hide();
+          $('#python').show();
+          $('#react, #ruby').hide();
         else {
-          $('#img3').show();
-          $('#img2, #img1').hide();
+          $('#react').show();
+          $('#python, #ruby').hide();
         }
         event.preventDefault();
 
