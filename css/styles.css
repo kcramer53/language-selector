@@ -11,27 +11,27 @@ body{
   color: white;
 }
 
-/* img {
-  width: auto;
-  height: 30px; */
-}
 h1 {
   font-size: 30px;
   font-weight: bold;
 }
+
 h2 {
   font-size: 30px;
   font-weight: bold;
 }
+
 h3 {
   font-size: 30px;
   font-weight: bold;
 }
+
 .panel-default{
   padding: 5px;
   border-radius: 20px;
   margin: 10px
 }
+
 .btn {
   background-color: grey;
   margin: 10px;
